@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,10 @@ namespace BenfordLab
          */
         public static int getFirstDigit(int digit) {
             // TODO
-            return 0;
+            digit = Math.Abs(digit);
+            while (digit >= 10)
+                digit /= 10;
+            return digit;
         }    
     }
 }
